@@ -17,7 +17,7 @@ struct matrixObject
 };
 
 // For demonstration purposes only
-int actualGameState = 0;
+int actualGameState = GAME_IN_PROGRESS;
 
 int main()
 {
