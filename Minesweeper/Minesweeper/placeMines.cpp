@@ -10,9 +10,12 @@ matrixObject** placeMines(int width, int heigth, int numberOfMines){
 
 	/*for (int i = width; i < 30; i++) // Out of range set -3 to know that's not part of map
 	{
-		for (int j = heigth; j < 20; j++)
+		for (int j = 0; j < 20; j++)
 		{
-			minesMatrix[i][j].objType = -3;
+			if (i >= width || j >= heigth)
+			{
+				minesMatrix[i][j].isValid = false;
+			}
 		}
 	}*/
 
