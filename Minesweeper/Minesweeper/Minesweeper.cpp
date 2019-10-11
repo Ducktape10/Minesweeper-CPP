@@ -18,10 +18,10 @@ int actualGameState = GAME_IN_PROGRESS;
 
 void matrixToStringTest()
 {
-	int width = 10;
-	int heigth = 10;
+	int width = 30;
+	int heigth = 20;
 
-	matrixObject** testPointerPointer = placeMines(width, heigth, 10);
+	matrixObject** testPointerPointer = placeMines(width, heigth, 50);
 	matrixObject* testPointer = *testPointerPointer;
 	matrixObject testMatrix[30][20];
 
