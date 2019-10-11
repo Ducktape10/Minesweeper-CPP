@@ -1,6 +1,6 @@
 bool isInsideOfMatrix(int x, int y, int width, int heigth) {
 	bool returnValue = false;
-	if (x >= 0 && y >= 0 && x <= width && y <= heigth) {
+	if (x >= 0 && y >= 0 && x < width && y < heigth) {
 		returnValue = true;
 	}
 	return returnValue;
@@ -8,16 +8,11 @@ bool isInsideOfMatrix(int x, int y, int width, int heigth) {
 
 int getLengthOfFieldPointer(int x, int y, int width, int heigth) {
 	int sizeOfArray = 8;
-	if (x == width && y == heigth || x == 0 && y == 0) {
+	if ((x == (width-1) && y == (heigth-1)) || (x == 0 && y == 0)) {
 		sizeOfArray = 3;
 	}
-	else if (x == 0 || y == 0 || x == width || y == width) {
+	else if (x == 0 || y == 0 || x == (width-1) || y == (width-1)) {
 		sizeOfArray = 5;
-	}
-
-	int** nearFields = new int* [sizeOfArray];
-	for (int i = 0; i < sizeOfArray; i++) {
-		nearFields[i] = new int[2];
 	}
 
 	return sizeOfArray;
@@ -26,7 +21,6 @@ int getLengthOfFieldPointer(int x, int y, int width, int heigth) {
 int **getNearFields(int x, int y, int width, int heigth) {
 
 	int sizeOfArray = 8;
-	sizeOfArray = getLengthOfFieldPointer(x, y, width, heigth);
 
 	int **nearFields = new int*[sizeOfArray];
 	for (int i = 0; i < sizeOfArray; i++) {

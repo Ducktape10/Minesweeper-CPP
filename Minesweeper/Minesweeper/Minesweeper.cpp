@@ -2,6 +2,7 @@
 #include "placeMines.h"
 #include "getNearFields.h"
 #include "MatrixToString.h"
+#include "generateMap.h"
 
 using namespace std;
 
@@ -22,14 +23,14 @@ void matrixToStringTest()
 	int heigth = 20;
 
 	matrixObject** testPointerPointer = placeMines(width, heigth, 50);
-	matrixObject* testPointer = *testPointerPointer;
+	matrixObject** renderedMap = generateMap(testPointerPointer, width, heigth);
 	matrixObject testMatrix[30][20];
 
 	for (int i = 0; i < width; i++)
 	{
 		for (int j = 0; j < heigth; j++)
 		{
-			testMatrix[i][j] = testPointerPointer[i][j];
+			testMatrix[i][j] = renderedMap[i][j];
 		}
 	}
 

@@ -13,6 +13,9 @@
     <ClCompile Include="placeMines.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="generateMap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="placeMines.h">
@@ -25,6 +28,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="getNearFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generateMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
