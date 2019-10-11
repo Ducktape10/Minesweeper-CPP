@@ -1,8 +1,7 @@
 #include <random>
+#include "Minesweeper.h"
 
-matrixObject[][] placeMines(int width, int heigth, int numberOfMines){
-    matrixObject minesMatrix[width][heigth]; // Need define struct default values
-
+void placeMines(struct matrixObject** minesMatrix, int width, int heigth, int numberOfMines) {
     for (int i = 0; i < numberOfMines; i++){
         bool placed = false;
 
@@ -15,6 +14,4 @@ matrixObject[][] placeMines(int width, int heigth, int numberOfMines){
             }
         }
     }
-
-    return minesMatrix; // You can define the size of matrixObject when you call this function
 }
