@@ -1,4 +1,6 @@
 #include <iostream>
+#include "Minesweeper.h"
+#include "placeMines.h"
 
 using namespace std;
 
