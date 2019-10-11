@@ -10,7 +10,7 @@ matrixObject * placeMines(int width, int heigth, int numberOfMines){
 		{
 			if (i >= width || j >= heigth)
 			{
-				minesMatrix[i][j].objType = -3;
+				minesMatrix[i][j].isValid = false;
 			}
 		}
 	}
