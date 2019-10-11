@@ -4,14 +4,11 @@
 matrixObject * placeMines(int width, int heigth, int numberOfMines){
     matrixObject minesMatrix[30][20]; // Need define struct default values
 
-	for (int i = 0; i < 30; i++)
+	for (int i = width; i < 30; i++)
 	{
-		for (int j = 0; j < 20; j++)
+		for (int j = heigth; j < 20; j++)
 		{
-			if (i >= width || j >= heigth)
-			{
-				minesMatrix[i][j].objType = -3;
-			}
+			minesMatrix[i][j].objType = -3;
 		}
 	}
 
