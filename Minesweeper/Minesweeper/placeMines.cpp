@@ -1,7 +1,19 @@
 #include <random>
+#include "MatrixObject.h"
 
-matrixObject[][] placeMines(int width, int heigth, int numberOfMines){
-    matrixObject minesMatrix[width][heigth]; // Need define struct default values
+matrixObject * placeMines(int width, int heigth, int numberOfMines){
+    matrixObject minesMatrix[30][20]; // Need define struct default values
+
+	for (int i = 0; i < 30; i++)
+	{
+		for (int j = 0; j < 20; j++)
+		{
+			if (i >= width || j >= heigth)
+			{
+				minesMatrix[i][j].objType = -3;
+			}
+		}
+	}
 
     for (int i = 0; i < numberOfMines; i++){
         bool placed = false;
@@ -16,5 +28,5 @@ matrixObject[][] placeMines(int width, int heigth, int numberOfMines){
         }
     }
 
-    return minesMatrix; // You can define the size of matrixObject when you call this function
+    return *minesMatrix; // You can define the size of matrixObject when you call this function
 }
