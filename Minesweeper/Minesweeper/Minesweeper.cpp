@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Minesweeper.h"
 #include "placeMines.h"
 
 using namespace std;
@@ -18,4 +17,5 @@ int actualGameState = GAME_IN_PROGRESS;
 int main()
 {
     cout << ((actualGameState == GAME_IN_PROGRESS) ? "The game is in progress...\n" : "The game has not started yet, or it has already ended...\n");
+	//matrixObject **testMatrix = placeMines(width 10, heigth 10, mines 50); usage for placeMines
 }
