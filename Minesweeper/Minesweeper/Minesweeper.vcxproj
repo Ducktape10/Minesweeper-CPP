@@ -157,6 +157,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MatrixObject.h" />
+    <ClInclude Include="MatrixToString.h" />
+    <ClInclude Include="placeMines.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

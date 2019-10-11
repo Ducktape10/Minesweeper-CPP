@@ -29,5 +29,11 @@
     <ClInclude Include="MatrixObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="placeMines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixToString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

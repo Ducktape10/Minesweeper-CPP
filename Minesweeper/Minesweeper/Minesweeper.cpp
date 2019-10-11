@@ -1,5 +1,6 @@
 #include <iostream>
 #include "placeMines.h"
+#include "MatrixToString.h"
 
 using namespace std;
 
@@ -18,7 +19,7 @@ void matrixToStringTest()
 {
 	matrixObject ** testMatrix = placeMines(10, 10, 10);
 	testMatrix[0][1].isFlagged = true;
-
+	cout << matrixToString(testMatrix);
 }
 
 int main()

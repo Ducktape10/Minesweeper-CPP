@@ -47,7 +47,8 @@ string matrixToString(matrixObject matrix[30][20])
 		else { result << i + 1 << "  "; }
 		for (int j = 0; j < width; j++)
 		{
-			if (matrix[j][i].isFlagged && !matrix[j][i].isVisible) { result << "F  "; }
+			if (matrix[j][i].isFlagged && matrix[j][i].isVisible) { result << "!F "; } // This only can happen with bombs.
+			else if (matrix[j][i].isFlagged && !matrix[j][i].isVisible) { result << "F  "; }
 			else if (!matrix[j][i].isVisible) { result << "X  "; }
 			else if (matrix[j][i].isVisible && matrix[j][i].objType == -1) { result << "!  "; }
 			else { result << matrix[j][i].objType << "  "; }
