@@ -151,12 +151,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MatrixToString.cpp" />
     <ClCompile Include="Minesweeper.cpp" />
     <ClCompile Include="placeMines.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Minesweeper.h" />
-    <ClInclude Include="placeMines.h" />
+    <ClInclude Include="MatrixObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
