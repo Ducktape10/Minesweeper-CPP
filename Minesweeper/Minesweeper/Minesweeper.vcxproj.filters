@@ -24,6 +24,9 @@
     <ClCompile Include="MatrixToString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="getNearFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MatrixObject.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MatrixToString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="getNearFields.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

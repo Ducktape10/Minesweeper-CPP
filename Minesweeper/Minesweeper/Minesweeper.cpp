@@ -1,5 +1,6 @@
 #include <iostream>
 #include "placeMines.h"
+#include "getNearFields.h"
 #include "MatrixToString.h"
 
 using namespace std;
