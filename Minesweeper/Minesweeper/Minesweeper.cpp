@@ -16,7 +16,8 @@ int actualGameState = GAME_IN_PROGRESS;
 
 void matrixToStringTest()
 {
-	matrixObject testMatrix[30][20] = placeMines(10, 10, 10);
+	matrixObject ** testMatrix = placeMines(10, 10, 10);
+	testMatrix[0][1].isFlagged = true;
 
 }
 
