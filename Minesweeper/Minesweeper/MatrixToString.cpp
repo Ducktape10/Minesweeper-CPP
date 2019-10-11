@@ -36,7 +36,6 @@ string matrixToString(matrixObject matrix[30][20])
 	result << "    ";
 	for (int i = 0; i < width; i++)
 	{
-		result << i + 1 << " ";
 		if (i < 8) { result << (i + 1) << "  "; }
 		else { result << i + 1 << " "; }
 	}
