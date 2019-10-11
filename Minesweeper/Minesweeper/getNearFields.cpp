@@ -11,7 +11,7 @@ int getLengthOfFieldPointer(int x, int y, int width, int heigth) {
 	if ((x == (width-1) && y == (heigth-1)) || (x == 0 && y == 0)) {
 		sizeOfArray = 3;
 	}
-	else if (x == 0 || y == 0 || x == (width-1) || y == (width-1)) {
+	else if (x == 0 || y == 0 || x == (width-1) || y == (heigth-1)) {
 		sizeOfArray = 5;
 	}
 
