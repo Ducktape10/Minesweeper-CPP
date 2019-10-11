@@ -151,11 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="getNearFields.cpp" />
     <ClCompile Include="MatrixToString.cpp" />
     <ClCompile Include="Minesweeper.cpp" />
     <ClCompile Include="placeMines.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="getNearFields.h" />
     <ClInclude Include="MatrixObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

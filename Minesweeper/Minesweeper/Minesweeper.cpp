@@ -1,5 +1,6 @@
 #include <iostream>
 #include "placeMines.h"
+#include "getNearFields.h"
 
 using namespace std;
 
@@ -16,8 +17,7 @@ int actualGameState = GAME_IN_PROGRESS;
 
 void matrixToStringTest()
 {
-	matrixObject testMatrix[30][20] = placeMines(10, 10, 10);
-
+	matrixObject **testMatrix = placeMines(10, 10, 10);
 }
 
 int main()
