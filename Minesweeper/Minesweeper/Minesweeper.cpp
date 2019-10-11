@@ -5,7 +5,7 @@
 
 using namespace std;
 
-enum gameState 
+enum gameState
 {
 	GAME_LOST = -1,
 	GAME_SETUP,
@@ -18,8 +18,17 @@ int actualGameState = GAME_IN_PROGRESS;
 
 void matrixToStringTest()
 {
-	matrixObject ** testMatrix = placeMines(10, 10, 10);
-	testMatrix[0][1].isFlagged = true;
+	matrixObject** testPointerPointer = placeMines(10, 10, 10);
+	matrixObject* testPointer = *testPointerPointer;
+	matrixObject testMatrix[30][20];
+	for (int i = 0; i < 30; i++)
+	{
+		for (int j = 0; j < 20; j++)
+		{
+			testMatrix[i][j] = testPointer[i * 30 + j];
+		}
+	}
+
 	cout << matrixToString(testMatrix);
 }
 
