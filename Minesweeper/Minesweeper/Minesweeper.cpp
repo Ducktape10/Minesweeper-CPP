@@ -17,8 +17,7 @@ struct matrixObject
 	bool isFlagged = false; // This variable decides if the field is rendered as an F or X. Also decides if the field can be poked or not in the function pokeField().
 };
 
-// For demonstration purposes only
-int actualGameState = GAME_IN_PROGRESS;
+int actualGameState = GAME_SETUP;
 
 int main()
 {
