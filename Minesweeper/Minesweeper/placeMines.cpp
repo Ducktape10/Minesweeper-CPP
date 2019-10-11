@@ -1,7 +1,7 @@
 #include <random>
 #include "Minesweeper.h"
 
-void placeMines(struct matrixObject** minesMatrix, int width, int heigth, int numberOfMines) {
+void placeMines(matrixObject **minesMatrix, int width, int heigth, int numberOfMines) {
     for (int i = 0; i < numberOfMines; i++){
         bool placed = false;
 
