@@ -1,7 +1,7 @@
 #include <random>
 #include "MatrixObject.h"
 
-matrixObject * placeMines(int width, int heigth, int numberOfMines){
+matrixObject *placeMines(int width, int heigth, int numberOfMines){
     matrixObject minesMatrix[30][20]; // Need define struct default values
 
 	for (int i = width; i < 30; i++)

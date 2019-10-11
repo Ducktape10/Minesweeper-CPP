@@ -15,7 +15,14 @@ enum gameState
 // For demonstration purposes only
 int actualGameState = GAME_IN_PROGRESS;
 
+void matrixToStringTest()
+{
+	matrixObject testMatrix[30][20] = placeMines(10, 10, 10);
+
+}
+
 int main()
 {
-    cout << ((actualGameState == GAME_IN_PROGRESS) ? "The game is in progress...\n" : "The game has not started yet, or it has already ended...\n");
+	matrixToStringTest();
+	cout << ((actualGameState == GAME_IN_PROGRESS) ? "The game is in progress...\n" : "The game has not started yet, or it has already ended...\n");
 }
