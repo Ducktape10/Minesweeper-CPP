@@ -3,6 +3,7 @@
 #include "getNearFields.h"
 #include "MatrixToString.h"
 #include "generateMap.h"
+#include "PokeField.h"
 
 using namespace std;
 

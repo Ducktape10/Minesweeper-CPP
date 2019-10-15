@@ -42,6 +42,9 @@
     <ClInclude Include="RevealNulls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PokeField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

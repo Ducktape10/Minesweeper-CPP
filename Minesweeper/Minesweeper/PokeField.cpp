@@ -1,7 +1,7 @@
 #include "MatrixObject.h"
 #include "RevealNulls.h"
 
-void PokeField(int x, int y, matrixObject** matrix, int width, int heigth)
+void pokeField(int x, int y, matrixObject** matrix, int width, int heigth)
 {
 	if (!matrix[x][y].isFlagged && !matrix[x][y].isVisible)
 	{
