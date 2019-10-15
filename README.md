@@ -1,1 +1,1 @@
-# Ericsson-CPP
+# Minesweeper-CPP
