@@ -4,6 +4,7 @@
 #include "MatrixToString.h"
 #include "generateMap.h"
 #include "PokeField.h"
+#include "FlegField.h"
 
 using namespace std;
 

@@ -22,6 +22,9 @@
     <ClCompile Include="PokeField.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="FlegField.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="placeMines.h">
@@ -43,6 +46,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PokeField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlegField.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

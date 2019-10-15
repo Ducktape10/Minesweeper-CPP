@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FlegField.cpp" />
     <ClCompile Include="generateMap.cpp" />
     <ClCompile Include="getNearFields.cpp" />
     <ClCompile Include="MatrixToString.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="RevealNulls.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FlegField.h" />
     <ClInclude Include="generateMap.h" />
     <ClInclude Include="getNearFields.h" />
     <ClInclude Include="MatrixObject.h" />
