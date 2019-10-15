@@ -1,4 +1,5 @@
 #include <random>
+#include <ctime>
 #include "MatrixObject.h"
 
 matrixObject** placeMines(int width, int heigth, int numberOfMines){
@@ -18,6 +19,8 @@ matrixObject** placeMines(int width, int heigth, int numberOfMines){
 			}
 		}
 	}*/
+
+	srand(time(NULL)); // For fully random numbers
 
     for (int i = 0; i < numberOfMines; i++){
         bool placed = false;
