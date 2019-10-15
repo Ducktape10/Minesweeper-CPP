@@ -164,6 +164,7 @@
     <ClInclude Include="MatrixObject.h" />
     <ClInclude Include="MatrixToString.h" />
     <ClInclude Include="placeMines.h" />
+    <ClInclude Include="RevealNulls.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
