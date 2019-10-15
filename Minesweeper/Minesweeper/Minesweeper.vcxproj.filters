@@ -16,6 +16,9 @@
     <ClCompile Include="generateMap.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="RevealNulls.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="placeMines.h">
@@ -40,6 +43,9 @@
     </Filter>
     <Filter Include="Source">
       <UniqueIdentifier>{cddd6f38-2e69-4851-845c-9bdeb38f6d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{48cbe824-b5d6-4682-bd38-bf4571aea4b4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
