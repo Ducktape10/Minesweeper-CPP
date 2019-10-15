@@ -8,7 +8,7 @@ bool isInsideOfMatrix(int x, int y, int width, int heigth) {
 
 int getLengthOfFieldPointer(int x, int y, int width, int heigth) {
 	int sizeOfArray = 8;
-	if ((x == (width-1) && y == (heigth-1)) || (x == 0 && y == 0)) {
+	if ((x == (width-1) && y == (heigth-1)) || (x == 0 && y == 0) || (x == 0 && y == (heigth - 1)) || (x == (width - 1) && y == 0)) {
 		sizeOfArray = 3;
 	}
 	else if (x == 0 || y == 0 || x == (width-1) || y == (heigth-1)) {
