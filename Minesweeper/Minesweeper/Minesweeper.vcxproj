@@ -156,6 +156,7 @@
     <ClCompile Include="MatrixToString.cpp" />
     <ClCompile Include="Minesweeper.cpp" />
     <ClCompile Include="placeMines.cpp" />
+    <ClCompile Include="PokeField.cpp" />
     <ClCompile Include="RevealNulls.cpp" />
   </ItemGroup>
   <ItemGroup>

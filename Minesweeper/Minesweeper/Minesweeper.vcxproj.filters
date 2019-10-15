@@ -19,6 +19,9 @@
     <ClCompile Include="RevealNulls.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="PokeField.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="placeMines.h">
