@@ -25,6 +25,9 @@
     <ClCompile Include="FlegField.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="gameStateRun.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="placeMines.h">
@@ -49,6 +52,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FlegField.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStateRun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

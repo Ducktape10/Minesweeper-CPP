@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FlegField.cpp" />
+    <ClCompile Include="gameStateRun.cpp" />
     <ClCompile Include="generateMap.cpp" />
     <ClCompile Include="getNearFields.cpp" />
     <ClCompile Include="MatrixToString.cpp" />
@@ -161,9 +162,12 @@
     <ClCompile Include="RevealNulls.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Enums.h" />
     <ClInclude Include="FlegField.h" />
+    <ClInclude Include="gameStateRun.h" />
     <ClInclude Include="generateMap.h" />
     <ClInclude Include="getNearFields.h" />
+    <ClInclude Include="GlobalVariables.h" />
     <ClInclude Include="MatrixObject.h" />
     <ClInclude Include="MatrixToString.h" />
     <ClInclude Include="placeMines.h" />

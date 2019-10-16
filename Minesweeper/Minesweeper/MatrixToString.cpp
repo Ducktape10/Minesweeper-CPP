@@ -31,7 +31,7 @@ int getHeight(matrixObject matrix[30][20])
 string matrixToString(matrixObject matrix[30][20])
 {
 	int width = getWidth(matrix);
-	int heigth = getHeight(matrix);
+	int height = getHeight(matrix);
 	stringstream result;
 	result << "    ";
 	for (int i = 0; i < width; i++)
@@ -40,7 +40,7 @@ string matrixToString(matrixObject matrix[30][20])
 		else { result << i + 1 << " "; }
 	}
 	result << "\n\n";
-	for (int i = 0; i < heigth; i++)
+	for (int i = 0; i < height; i++)
 	{
 		if (i < 9) { result << " " << i + 1 << "  "; }
 		else { result << i + 1 << "  "; }

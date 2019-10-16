@@ -1,12 +1,13 @@
 #include <random>
 #include <ctime>
-#include "MatrixObject.h"
 
-matrixObject** placeMines(int width, int heigth, int numberOfMines){
+#include "placeMines.h"
+
+matrixObject** placeMines(int width, int height, int numberOfMines){
 	matrixObject** minesMatrix = new matrixObject*[width]; // Need define struct default values
 
 	for (int i = 0; i < width; i++) {
-		minesMatrix[i] = new matrixObject[heigth];
+		minesMatrix[i] = new matrixObject[height];
 	}
 
 	/*for (int i = width; i < 30; i++) // Out of range set -3 to know that's not part of map
@@ -27,7 +28,7 @@ matrixObject** placeMines(int width, int heigth, int numberOfMines){
 
         while (!placed){
             int randomX = rand() % (width);
-            int randomY =  rand() % (heigth);
+            int randomY =  rand() % (height);
             if (minesMatrix[randomX][randomY].objType != -1){ // Need to know mine objType [-1]
                 minesMatrix[randomX][randomY].objType = -1;
                 placed = true;
