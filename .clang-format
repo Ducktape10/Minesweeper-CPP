@@ -1,0 +1,7 @@
+﻿---
+BasedOnStyle: Chromium
+
+PointerAlignment: Right
+AccessModifierOffset: -2
+AllowShortFunctionsOnASingleLine: None
+...
