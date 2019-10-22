@@ -1,6 +1,6 @@
-#ifndef GLOBALVARS_H
-#define GLOBALVARS_H
+#ifndef GLOBAL_VARIABLES_H
+#define GLOBAL_VARIABLES_H
 
 extern int actualGameState;
 
-#endif
+#endif  // GLOBAL_VARIABLES_H

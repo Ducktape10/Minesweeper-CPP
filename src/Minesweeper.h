@@ -1,3 +1,6 @@
+#ifndef MINESWEEPER_H
+#define MINESWEEPER_H
+
 struct matrixObject {
   int objType = 0;  // Value can range from -1 to 8. 0-8 then its a field (the
                     // number depends on how many mines there are around the
@@ -10,3 +13,5 @@ struct matrixObject {
                            // an F or X. Also decides if the field can be poked
                            // or not in the function pokeField().
 };
+
+#endif  // MINESWEEPER_H

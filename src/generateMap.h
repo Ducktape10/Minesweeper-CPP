@@ -1,8 +1,8 @@
-#ifndef GENERATEMAP_H
-#define GENERATEMAP_H
+#ifndef GENERATE_MAP_H
+#define GENERATE_MAP_H
 
 #include "MatrixObject.h"
 
 matrixObject **generateMap(matrixObject **minesMatrix, int width, int heigth);
 
-#endif
+#endif  // GENERATE_MAP_H

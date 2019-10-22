@@ -1,8 +1,8 @@
-#ifndef PLACEMINES_H
-#define PLACEMINES_H
+#ifndef PLACE_MINES_H
+#define PLACE_MINES_H
 
 #include "MatrixObject.h"
 
 matrixObject **placeMines(int width, int heigth, int numberOfMines);
 
-#endif  // !PLACEMINES_H
+#endif  // PLACE_MINES_H

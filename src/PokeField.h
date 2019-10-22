@@ -1,8 +1,8 @@
-#ifndef GENERATEMAP_H
-#define GENERATEMAP_H
+#ifndef POKE_FIELD_H
+#define POKE_FIELD_H
 
 #include "MatrixObject.h"
 
 void pokeField(int x, int y, matrixObject **matrix, int width, int heigth);
 
-#endif
+#endif  // POKE_FIELD_H

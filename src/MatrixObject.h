@@ -1,5 +1,5 @@
-#ifndef MYSTRUCT_H
-#define MYSTRUCT_H
+#ifndef MATRIX_OBJECT_H
+#define MATRIX_OBJECT_H
 
 struct matrixObject {
   int objType = 0;  // Value can range from -1 to 8. 0-8 then its a field (the
@@ -15,4 +15,4 @@ struct matrixObject {
   bool isValid = true;     // Representing that, is it a valid field or not.
 };
 
-#endif
+#endif  // MATRIX_OBJECT_H
