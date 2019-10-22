@@ -3,6 +3,6 @@
 
 #include "MatrixObject.h"
 
-void flegField(int x, int y, matrixObject** matrix);
+void flegField(int x, int y, matrixObject **matrix);
 
 #endif

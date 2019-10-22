@@ -6,6 +6,6 @@
 
 void Run();
 
-void GetInput(); // Need to add the parameters...
+void GetInput();  // Need to add the parameters...
 
 #endif

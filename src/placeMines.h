@@ -3,6 +3,6 @@
 
 #include "MatrixObject.h"
 
-matrixObject** placeMines(int width, int heigth, int numberOfMines);
+matrixObject **placeMines(int width, int heigth, int numberOfMines);
 
-#endif // !PLACEMINES_H
+#endif  // !PLACEMINES_H

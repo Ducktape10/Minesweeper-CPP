@@ -3,6 +3,6 @@
 
 #include "MatrixObject.h"
 
-matrixObject **generateMap(matrixObject** minesMatrix, int width, int heigth);
+matrixObject **generateMap(matrixObject **minesMatrix, int width, int heigth);
 
 #endif

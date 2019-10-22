@@ -1,40 +1,44 @@
-#include <random>
 #include <ctime>
+#include <random>
 
 #include "placeMines.h"
 
-matrixObject** placeMines(int width, int height, int numberOfMines){
-	matrixObject** minesMatrix = new matrixObject*[width]; // Need define struct default values
+matrixObject **placeMines(int width, int height, int numberOfMines) {
+  matrixObject **minesMatrix =
+      new matrixObject *[width];  // Need define struct default values
 
-	for (int i = 0; i < width; i++) {
-		minesMatrix[i] = new matrixObject[height];
-	}
+  for (int i = 0; i < width; i++) {
+    minesMatrix[i] = new matrixObject[height];
+  }
 
-	/*for (int i = width; i < 30; i++) // Out of range set -3 to know that's not part of map
-	{
-		for (int j = 0; j < 20; j++)
-		{
-			if (i >= width || j >= heigth)
-			{
-				minesMatrix[i][j].isValid = false;
-			}
-		}
-	}*/
+  /*for (int i = width; i < 30; i++) // Out of range set -3 to know that's not
+  part of map
+  {
+          for (int j = 0; j < 20; j++)
+          {
+                  if (i >= width || j >= heigth)
+                  {
+                          minesMatrix[i][j].isValid = false;
+                  }
+          }
+  }*/
 
-	srand(time(NULL)); // For fully random numbers
+  srand(time(NULL));  // For fully random numbers
 
-    for (int i = 0; i < numberOfMines; i++){
-        bool placed = false;
+  for (int i = 0; i < numberOfMines; i++) {
+    bool placed = false;
 
-        while (!placed){
-            int randomX = rand() % (width);
-            int randomY =  rand() % (height);
-            if (minesMatrix[randomX][randomY].objType != -1){ // Need to know mine objType [-1]
-                minesMatrix[randomX][randomY].objType = -1;
-                placed = true;
-            }
-        }
+    while (!placed) {
+      int randomX = rand() % (width);
+      int randomY = rand() % (height);
+      if (minesMatrix[randomX][randomY].objType !=
+          -1) {  // Need to know mine objType [-1]
+        minesMatrix[randomX][randomY].objType = -1;
+        placed = true;
+      }
     }
+  }
 
-    return minesMatrix; // You can define the size of matrixObject when you call this function
+  return minesMatrix;  // You can define the size of matrixObject when you call
+                       // this function
 }
