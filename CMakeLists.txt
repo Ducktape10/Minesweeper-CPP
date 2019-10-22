@@ -33,7 +33,6 @@ add_executable(minesweeper
 target_link_libraries(minesweeper PRIVATE
   CompilerWarnings::High
   CompilerWarnings::Pedantic
-  CompilerWarnings::AsError
   CompilerWarnings::Colorful
 )
 
