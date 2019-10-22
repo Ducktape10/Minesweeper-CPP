@@ -1,13 +1,13 @@
 #include <iostream>
 
 #include "FlegField.h"
+#include "GameStateRun.h"
+#include "GenerateMap.h"
+#include "GetNearFields.h"
 #include "GlobalVariables.h"
 #include "MatrixToString.h"
+#include "PlaceMines.h"
 #include "PokeField.h"
-#include "gameStateRun.h"
-#include "generateMap.h"
-#include "getNearFields.h"
-#include "placeMines.h"
 
 using namespace std;
 

@@ -1,5 +1,5 @@
+#include "GetNearFields.h"
 #include "MatrixObject.h"
-#include "getNearFields.h"
 
 matrixObject **generateMap(matrixObject **minesMatrix, int width, int height) {
   for (int x = 0; x < width; x++) {

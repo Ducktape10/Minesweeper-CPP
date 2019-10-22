@@ -10,24 +10,24 @@ add_executable(minesweeper
   src/Enums.h
   src/FlegField.cpp
   src/FlegField.h
+  src/GameStateRun.cpp
+  src/GameStateRun.h
+  src/GenerateMap.cpp
+  src/GenerateMap.h
+  src/GetNearFields.cpp
+  src/GetNearFields.h
   src/GlobalVariables.h
   src/MatrixObject.h
   src/MatrixToString.cpp
   src/MatrixToString.h
   src/Minesweeper.cpp
   src/Minesweeper.h
+  src/PlaceMines.cpp
+  src/PlaceMines.h
   src/PokeField.cpp
   src/PokeField.h
   src/RevealNulls.cpp
   src/RevealNulls.h
-  src/gameStateRun.cpp
-  src/gameStateRun.h
-  src/generateMap.cpp
-  src/generateMap.h
-  src/getNearFields.cpp
-  src/getNearFields.h
-  src/placeMines.cpp
-  src/placeMines.h
 )
 
 target_link_libraries(minesweeper PRIVATE

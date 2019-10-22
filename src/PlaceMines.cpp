@@ -1,7 +1,7 @@
 #include <ctime>
 #include <random>
 
-#include "placeMines.h"
+#include "PlaceMines.h"
 
 matrixObject **placeMines(int width, int height, int numberOfMines) {
   matrixObject **minesMatrix =

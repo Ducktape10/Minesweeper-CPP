@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "gameStateRun.h"
+#include "GameStateRun.h"
 
 using namespace std;
 
