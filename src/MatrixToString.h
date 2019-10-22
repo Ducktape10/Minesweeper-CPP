@@ -4,6 +4,4 @@
 
 #include "MatrixObject.h"
 
-using namespace std;
-
-string matrixToString(matrixObject matrix[30][20]);
+std::string matrixToString(matrixObject (&matrix)[30][20]);

@@ -1,10 +1,11 @@
 #include <sstream>
 #include <string>
+
 #include "MatrixObject.h"
 
 using namespace std;
 
-int getWidth(matrixObject matrix[30][20]) {
+int getWidth(matrixObject (&matrix)[30][20]) {
   int i = -1;
   bool outOfRange = false;
   while (i < 30 && !outOfRange) {
@@ -16,7 +17,7 @@ int getWidth(matrixObject matrix[30][20]) {
   return i;
 }
 
-int getHeight(matrixObject matrix[30][20]) {
+int getHeight(matrixObject (&matrix)[30][20]) {
   int i = -1;
   bool outOfRange = false;
   while (i < 20 && !outOfRange) {
@@ -28,7 +29,7 @@ int getHeight(matrixObject matrix[30][20]) {
   return i;
 }
 
-string matrixToString(matrixObject matrix[30][20]) {
+std::string matrixToString(matrixObject (&matrix)[30][20]) {
   int width = getWidth(matrix);
   int height = getHeight(matrix);
   stringstream result;
