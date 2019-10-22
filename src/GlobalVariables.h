@@ -1,6 +1,3 @@
-#ifndef GLOBAL_VARIABLES_H
-#define GLOBAL_VARIABLES_H
+#pragma once
 
 extern int actualGameState;
-
-#endif  // GLOBAL_VARIABLES_H

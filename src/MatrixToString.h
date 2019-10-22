@@ -1,6 +1,4 @@
-
-#ifndef MATRIX_TO_STRING_H
-#define MATRIX_TO_STRING_H
+#pragma once
 
 #include <string>
 
@@ -9,5 +7,3 @@
 using namespace std;
 
 string matrixToString(matrixObject matrix[30][20]);
-
-#endif  // MATRIX_TO_STRING_H

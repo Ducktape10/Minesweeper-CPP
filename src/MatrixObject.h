@@ -1,5 +1,4 @@
-#ifndef MATRIX_OBJECT_H
-#define MATRIX_OBJECT_H
+#pragma once
 
 struct matrixObject {
   int objType = 0;  // Value can range from -1 to 8. 0-8 then its a field (the
@@ -14,5 +13,3 @@ struct matrixObject {
                            // or not in the function pokeField().
   bool isValid = true;     // Representing that, is it a valid field or not.
 };
-
-#endif  // MATRIX_OBJECT_H
