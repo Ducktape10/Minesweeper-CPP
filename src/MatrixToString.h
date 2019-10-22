@@ -4,4 +4,6 @@
 
 #include "MatrixObject.h"
 
-std::string matrixToString(matrixObject (&matrix)[30][20]);
+int getWidth(const matrixObject (&matrix)[30][20]);
+int getHeight(const matrixObject (&matrix)[30][20]);
+std::string matrixToString(const matrixObject (&matrix)[30][20]);

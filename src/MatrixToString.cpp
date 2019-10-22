@@ -3,9 +3,7 @@
 
 #include "MatrixObject.h"
 
-using namespace std;
-
-int getWidth(matrixObject (&matrix)[30][20]) {
+int getWidth(const matrixObject (&matrix)[30][20]) {
   int i = -1;
   bool outOfRange = false;
   while (i < 30 && !outOfRange) {
@@ -17,7 +15,7 @@ int getWidth(matrixObject (&matrix)[30][20]) {
   return i;
 }
 
-int getHeight(matrixObject (&matrix)[30][20]) {
+int getHeight(const matrixObject (&matrix)[30][20]) {
   int i = -1;
   bool outOfRange = false;
   while (i < 20 && !outOfRange) {
@@ -29,10 +27,10 @@ int getHeight(matrixObject (&matrix)[30][20]) {
   return i;
 }
 
-std::string matrixToString(matrixObject (&matrix)[30][20]) {
+std::string matrixToString(const matrixObject (&matrix)[30][20]) {
   int width = getWidth(matrix);
   int height = getHeight(matrix);
-  stringstream result;
+  std::stringstream result;
   result << "    ";
   for (int i = 0; i < width; i++) {
     if (i < 8) {
